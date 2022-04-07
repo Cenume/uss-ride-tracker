@@ -1,0 +1,33 @@
+
+html, body {
+  font-family: cursive;
+}
+
+.frame {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15rem);
+  grid-gap: 1rem;
+}
+
+.card {
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.spinner {
+  border: 1rem solid #f3f3f3; /* Light grey */
+  border-top: 1rem solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  left: calc(50% - 4rem);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

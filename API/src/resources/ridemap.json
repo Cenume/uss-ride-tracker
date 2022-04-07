@@ -1,0 +1,14 @@
+{
+  "Roller Coaster": {
+    "duration": 240,
+    "capacity": 24
+  },
+  "Bumper Car": {
+    "duration": 360,
+    "capacity": 12
+  },
+  "Puppet Show": {
+    "duration": 360,
+    "capacity": 36
+  }
+}

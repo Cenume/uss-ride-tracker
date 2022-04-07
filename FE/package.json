@@ -1,0 +1,26 @@
+{
+  "name": "ride-tracker-fe",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "author": "nikolas.wangsaputra",
+  "license": "MIT",
+  "scripts": {
+    "build-spa": "esbuild --sourcemap --bundle --outdir=dist/static/ src/core/index.tsx",
+    "build": "rm -rf dist && tsc && cp -r src/static dist/static && yarn build-spa",
+    "start": "yarn build && node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "esbuild": "^0.12.26",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "path": "^0.12.7",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
